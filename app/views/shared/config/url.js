@@ -1,4 +1,4 @@
 //URL to the database
-const urlval = "https://investigame-fd5a3.firebaseio.com"
+const urlval = "https://dblocater.firebaseio.com"
 
 exports.url = urlval
