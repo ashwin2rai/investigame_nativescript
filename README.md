@@ -1,2 +1,3 @@
-# investigame_nativescript
+# NativeScript InvestiGame Android App
+
 Nativescript Android app for InvestiGame 
