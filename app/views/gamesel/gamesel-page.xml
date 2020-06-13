@@ -1,0 +1,49 @@
+<Page loaded="loaded" xmlns:sd="nativescript-ui-sidedrawer">
+
+    <sd:RadSideDrawer id="sideDrawer">
+
+        <!-- side drawer content -->
+        <sd:RadSideDrawer.drawerContent>
+            <StackLayout class="sidedrawer-left">
+                <StackLayout class="sidedrawer-header">
+                    <Label text="Author: Ashwin Rai"
+                        class="sidedrawer-header-brand" />
+                    <Label text="ashwin2rai@gmail.com"
+                        class="sidedrawer-list-item-email" />
+                </StackLayout>
+                <StackLayout class="sidedrawer-content">
+                    <Label text="LinkedIn" class="sidedrawer-list-item-text"
+                        tap="linkedinTouch" />
+                    <Label text="Github" class="sidedrawer-list-item-text"
+                        tap="githubTouch" />
+                    <Label text="Scholar" class="sidedrawer-list-item-text"
+                        tap="scholarTouch" />
+                    <Label text="WebApp" class="sidedrawer-list-item-text"
+                        tap="webappTouch" />
+
+                </StackLayout>
+            </StackLayout>
+        </sd:RadSideDrawer.drawerContent>
+
+
+        <sd:RadSideDrawer.mainContent>
+            <FlexboxLayout class="backg">
+                <StackLayout orientation="vertical">
+                    <Image src="~/images/investigame1.png" class="imagepad" />
+                    <ScrollView orientation="vertical" height="300">
+                        <Label class="textwall"
+                            text="Investors, resellers, and gaming enthusiasts are always interested in knowing if a new video game will be commercially sucessful. This information can be used in a variety of ways but most importantly as a signal for investment decisions since the gaming market is very volatile. Investigame uses Machine Learning tools to calculate and predict how video games will perform on the market using social media text analytics, publisher/developer info, and professional reviews for the game so you can bet on the right game every time."
+                            textWrap="true" />
+                    </ScrollView>
+                    <ActivityIndicator busy="{{ isLoading }}"
+                        horizontalAlignment="center"
+                        verticalAlignment="center" />
+                    <Button class="buttontext" text="Start"
+                        tap="changetoselgame" />
+                    <Button class="buttontext" text="Info"
+                        tap="toggleDrawer" />
+                </StackLayout>
+            </FlexboxLayout>
+        </sd:RadSideDrawer.mainContent>
+    </sd:RadSideDrawer>
+</Page>

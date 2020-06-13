@@ -1,0 +1,50 @@
+.gamelabel {
+  text-align: center;
+}
+
+Image {
+    width: 85%;
+}
+
+.gameim{
+width: 75%;
+  border: 100px;
+  border-color: whitesmoke;
+
+}
+
+.dettitle{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: "Montserrat";
+    text-align: left;
+    margin: 10 0 2 47;
+}
+
+.buttontext{
+margin: 10 0 0 0;
+width: 80%;
+
+}
+
+.detmed{
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: "Montserrat";
+    text-align: left;
+    margin: 1 0 1 50;
+}
+
+.detbig{
+
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: "Montserrat";
+    text-align: left;
+    margin: 1 0 1 50;
+}
+
+.imagepad {
+ margin: 10 0 20 0;
+
+}

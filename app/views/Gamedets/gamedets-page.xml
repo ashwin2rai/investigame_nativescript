@@ -1,0 +1,25 @@
+<Page loaded="loaded">
+    <StackLayout orientation="vertical">
+        <Image src="~/images/investigame1.png" class="imagepad" />
+
+        <ScrollView orientation="vertical" height="80%">
+            <StackLayout orientation="vertical">
+                <Image src="{{ imsrc }}" loadMode="async" class="gameim" />
+                <Label text="{{'Title: ' + title}}" textWrap="true"
+                    class="dettitle" />
+                <Label text="{{'Publisher: ' + pub}} " textWrap="true"
+                    class="detmed" />
+                <Label text="{{'Developer: ' + dev}}" textWrap="true"
+                    class="detmed" />
+                <Label text="{{'Rating: ' + rev}}" textWrap="true"
+                    class="detmed" />
+                <Label text="{{'Prediction: ' + pred}}" textWrap="true"
+                    class="detbig" />
+                <Label text="{{'Confidence: ' + prob + '%'}}" textWrap="true"
+                    class="detbig" />
+                <Button class="buttontext" text="Back" tap="changetoselgame" />
+
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</Page>

@@ -1,0 +1,57 @@
+<Page loaded="loaded" xmlns:sd="nativescript-ui-sidedrawer">
+
+    <sd:RadSideDrawer id="sideDrawer">
+
+        <!-- side drawer content -->
+        <sd:RadSideDrawer.drawerContent>
+            <StackLayout class="sidedrawer-left">
+                <StackLayout class="sidedrawer-header">
+                    <Label text="Author: Ashwin Rai"
+                        class="sidedrawer-header-brand" />
+                    <Label text="ashwin2rai@gmail.com"
+                        class="sidedrawer-list-item-email" />
+                </StackLayout>
+                <StackLayout class="sidedrawer-content">
+                    <Label text="LinkedIn" class="sidedrawer-list-item-text"
+                        tap="linkedinTouch" />
+                    <Label text="Github" class="sidedrawer-list-item-text"
+                        tap="githubTouch" />
+                    <Label text="Scholar" class="sidedrawer-list-item-text"
+                        tap="scholarTouch" />
+                    <Label text="WebApp" class="sidedrawer-list-item-text"
+                        tap="webappTouch" />
+
+                </StackLayout>
+            </StackLayout>
+        </sd:RadSideDrawer.drawerContent>
+
+        <sd:RadSideDrawer.mainContent>
+
+            <FlexboxLayout class="backg">
+                <StackLayout orientation="vertical" style="padding: 0 10 0 10">
+
+                    <Label text="Search:"
+                        class="gametitleheader" />
+                    <SearchBar text="{{sbText}}" id="searchBar"
+                        hint="Type game here" style="margin-bottom:10px" />
+
+                    <ListView items="{{ myTitles }}" itemTap="onItemTap"
+                        separatorColor="darkred" rowHeight="50"
+                        class="list-group" id="listView" height="70%">
+                        <ListView.itemTemplate>
+                            <!-- The item template can only have a single root view container (e.g. GriLayout, StackLayout, etc.) -->
+                            <StackLayout class="list-group-item">
+                                <Label text="{{ title }}" textWrap="true"
+                                    class="gametitle" />
+                            </StackLayout>
+                        </ListView.itemTemplate>
+                    </ListView>
+                    <Button class="buttontext" text="Info"
+                        tap="toggleDrawer" />
+
+                </StackLayout>
+            </FlexboxLayout>
+        </sd:RadSideDrawer.mainContent>
+
+    </sd:RadSideDrawer>
+</Page>

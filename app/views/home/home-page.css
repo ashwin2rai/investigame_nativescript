@@ -1,0 +1,9 @@
+FlexboxLayout {
+  justify-content: center;
+  align-items: center;
+}
+
+Image.resim {
+    margin-top:25%;
+    width: 50%;
+}

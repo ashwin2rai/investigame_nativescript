@@ -1,0 +1,12 @@
+ <Page loaded="loaded" tap="changetoselect">
+
+     <FlexboxLayout>
+         <StackLayout orientation="vertical">
+
+             <Image src="~/images/logo.png" />
+             <Image class="resim" src="~/images/touch.png" />
+
+         </StackLayout>
+     </FlexboxLayout>
+
+ </Page>

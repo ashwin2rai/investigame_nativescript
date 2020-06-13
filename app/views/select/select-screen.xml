@@ -1,0 +1,7 @@
+<Page loaded="loaded" tap="changetohome">
+    <FlexboxLayout>
+        <StackLayout orientation="vertical">
+            <Image src="~/images/error.png" />
+        </StackLayout>
+    </FlexboxLayout>
+</Page>
