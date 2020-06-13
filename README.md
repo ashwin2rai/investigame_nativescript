@@ -1,3 +1,3 @@
-# NativeScript InvestiGame Android App
+# NativeScript InvestiGame App
 
 Nativescript Android app for InvestiGame 
